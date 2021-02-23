@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+   <script src = "./data/bell_tower_4326.geojson"></script>
+   <script src = "./data/kennan_4326.geojson"></script>
+   <script src = "./data/carmichael_4326.geojson"></script>
+
+</head>
+<body>
+
+    <div id="mapid"></div>
+    <style>
+        #mapid{ width: 900px; height: 500px;}
+    </style>
+
+    <script>
+        var map = L.map('mapid').setView([35.91, -79.05], 17);
+        L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {}).addTo(map)
+
+        // L.marker([35.9086, -79.0492]).addTo(map)
+        //     .bindPopup("Bell Tower")
+        //     .openPopup();
+        var belltowerIcon = L.icon({ // notice the L.icon which is a Leaflet object with properties
+        iconUrl: 'https://lh3.googleusercontent.com/proxy/GEveSIVK2RZUdPnvTA-TVVimdkL-szbVVlyry0Bsgzf5fw9vBbS1tG4tCPtGVT7h6Nl-5pShNPxpop_m8-iIpe8',
+        // this points to a jpg image obtained from the internet
+        iconSize: [50,50], // size of the icon
+        popupAnchor: [0,0] // where the icon is located relative to the lat lon of the point.
+        });
+        var belltowerPopup = "Bell Tower<br/><img src='https://www.unc.edu/wp-content/uploads/2018/08/belltower.jpg'width='100px'/>";
+
+        // L.marker([35.90694, -79.04778]).addTo(map)
+        //     .bindPopup("Kenan Memorial Stadium")
+        //     .openPopup();
+        var kenanIcon = L.icon({ 
+        iconUrl: 'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/77011/goal-post-football-clipart-md.png',
+        iconSize: [50,50],
+        popupAnchor: [0,0]
+        });
+        var kenanPopup = "Kenan Memorial Stadium<br/><img src='https://chapelboromedia.s3.amazonaws.com/uploads/2019/07/17141436/Kenan-Stadium-1200x640.png'width='100px'/>";
+
+        // L.marker([35.90953, -79.04541]).addTo(map)
+        //     .bindPopup("Carmichael Arena")
+        //     .openPopup();
+         var carmichaelIcon = L.icon({ 
+        iconUrl: 'https://static.wikia.nocookie.net/battlefordreamislandfanfiction/images/3/3b/Basketball_Blue.png/revision/latest?cb=20170626075759',
+        iconSize: [50,50],
+        popupAnchor: [0,0]
+        });
+        var carmichaelPopup = "Carmichael Arena<br/><img src='https://e1.nmcdn.io/clancytheys/wp-content/uploads/2018/05/Carmichael-Auditorium_UNC_Sports_Rec-Fitness_2.jpg.jpg/v:1-width:1900-height:594-fit:cover/Carmichael-Auditorium_UNC_Sports_Rec-Fitness_2.jpg.jpg?signature=d2898228'width='100px'/>";
+        
+        // L.geoJSON(uncwell).addTo(map)
+        L.geoJSON(belltower, { // a
+        pointToLayer: function (feature, latlng) { // b
+        return L.marker(latlng, {icon: belltowerIcon});}}) // c
+        .bindPopup(belltowerPopup) // d
+        .addTo(map); //
+
+        L.geoJSON(kenan, {
+        pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {icon: kenanIcon});}})
+        .bindPopup(kenanPopup)
+        .addTo(map);
+
+        L.geoJSON(carmichael, {
+        pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {icon: carmichaelIcon});}})
+        .bindPopup(carmichaelPopup)
+        .addTo(map);
+    </script>
+
+    
+</body>
+</html>

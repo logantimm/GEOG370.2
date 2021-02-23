@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2 style="color:red"></h2>
+    <p>I used QGIS to create maps of different projections by looking up the different EPSG or ESRI numbers. I then editied the colors in the item properties to make all the maps follow the same color scheme.</p>
+    <h2>WGS84 Projection</h2>
+    <h3>This map projection preserves the shape and distance really well close to the equator, but there is heavy distortion at either one of the poles. As evident by the strethcing of the circles, we can see that the area and shape both get distorted immensly at the north and south pole.</h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This map projection provides a good depiction of qualities right at the origin of the equator and prime meridian, but distorts shape, area, distance, direction, and angles to the north, south, east, and west.</h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo Mercator Projection</h2>
+    <h3>This projection preserves the shape of continents all over the globe, but distorts the size with increasing intensity closer to the poles.</h3>
+    <a href="./maps/3857.png">
+    <img src="./maps/3857.png" alt="Pseudo Mercator" width='500px'>
+    </a>
+    <h2>Sphere Winkel Projection</h2>
+    <h3>This projection preserves size around the equator, but stretches the shape and distance at the poles.</h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="Sphere Winkel" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area</h2>
+    <h3>This projection preserves the shape and area close to the equator, but only continues to preserve the area as it moves towards the poles.</h3>
+    <a href="./maps/54034.png">
+    <img src="./maps/54034.png" alt="World Cylindrical Equal Area" width='500px'>
+    </a>
+    <h2>World Equidistant Conic</h2>
+    <h3>This projection preserves distance along the lattitudes where the cone was positioned in relevance to the globe, but distorts it elsewhere.</h3>
+    <a href="./maps/54027.png">
+    <img src="./maps/54027.png" alt="World Equidistant Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant</h2>
+    <h3>This projection preserves distance throughout the map, but greatly distorts size, area, and shape at the bottom of the cone projection, even more so than the World Equidistant Conic projection.</h3>
+    <a href="./maps/102016.png">
+    <img src="./maps/102016.png" alt="North Pole Azimuthal Equidistant" width='500px'>
+    </a>
+    <h2>World Bonne</h2>
+    <h3>I chose this map because of the cute heart shape. It does appear to preserve area pretty well across the globe and preserves shape around the north pole, but not around the south pole or the antimeridian.</h3>
+    <a href="./maps/54024.png">
+    <img src="./maps/54024.png" alt="World Bonne" width='500px'>
+    </a>
+    <h2>World Cassini</h2>
+    <h3>I chose this projection because of how crazy it looked. I could not imagine why anyone would choose this map to look at the Earth, I can see that the shape and angles are perfectly preserved right at the origin of the equator and prime meridian.</h3>
+    <a href="./maps/54028.png">
+    <img src="./maps/54028.png" alt="World Cassini" width='500px'>
+    </a>
+    <h2 style="color:red"></u></h2>
+    <h3></h3>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
