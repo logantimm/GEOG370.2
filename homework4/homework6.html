@@ -28,12 +28,35 @@
   <script>
       var map = L.map('map').setView([40.12574406377926, -83.91721977279292], 14.0);
       
-      var daPhoto = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
+      var marker = L.marker([40.12574406377926, -83.91721977279292]);
+
+      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+      var ESRI = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        }).addTo(map);
+
+      var photo = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
         attribution: 'USGS'
       }).addTo(map);
+
+      var tiles = {
+        "Open Street Map": OSM,
+        "ESRI": ESRI,
+        "Honolulu Arial Image 1968":photo,
+      }
+
+      var vectors = {
+  "The center":marker
+}
+
+      L.control.layers(vectors, tiles).addTo(map);
   </script>
 </body>
 </html>
