@@ -26,14 +26,14 @@
     </style>
 
     <script>
-        var map = L.map('mapid').setView([35.91, -79.05], 17);
+        var map = L.map('mapid').setView([35.907740, -79.046673], 17);
         L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {}).addTo(map)
 
         // L.marker([35.9086, -79.0492]).addTo(map)
         //     .bindPopup("Bell Tower")
         //     .openPopup();
         var belltowerIcon = L.icon({ // notice the L.icon which is a Leaflet object with properties
-        iconUrl: 'https://lh3.googleusercontent.com/proxy/GEveSIVK2RZUdPnvTA-TVVimdkL-szbVVlyry0Bsgzf5fw9vBbS1tG4tCPtGVT7h6Nl-5pShNPxpop_m8-iIpe8',
+        iconUrl: 'https://www.flaticon.com/svg/vstatic/svg/2135/2135731.svg?token=exp=1614182904~hmac=7121c5525f3fca667d9fbbaae2d4452f',
         // this points to a jpg image obtained from the internet
         iconSize: [50,50], // size of the icon
         popupAnchor: [0,0] // where the icon is located relative to the lat lon of the point.
@@ -54,7 +54,7 @@
         //     .bindPopup("Carmichael Arena")
         //     .openPopup();
          var carmichaelIcon = L.icon({ 
-        iconUrl: 'https://static.wikia.nocookie.net/battlefordreamislandfanfiction/images/3/3b/Basketball_Blue.png/revision/latest?cb=20170626075759',
+        iconUrl: 'https://www.flaticon.com/svg/vstatic/svg/4232/4232011.svg?token=exp=1614183022~hmac=ecb70c90825d0f0abb77826e21d188d2',
         iconSize: [50,50],
         popupAnchor: [0,0]
         });
@@ -78,6 +78,24 @@
         return L.marker(latlng, {icon: carmichaelIcon});}})
         .bindPopup(carmichaelPopup)
         .addTo(map);
+
+        // create a red polygon from an array of LatLng points
+        var latlngs = [[35.9086, -79.0492],[35.90953, -79.04541],[35.90694, -79.04778]];
+        var polygon = L.polygon(latlngs, {color: 'green'}).addTo(map);
+        // zoom the map to the polygon
+        map.fitBounds(polygon.getBounds());
+
+        // create a red polyline from an array of LatLng points
+        var latlngs = [
+            [35.9086, -79.0492],
+            [35.90953, -79.04541],
+            [35.90694, -79.04778],
+            [35.9086, -79.0492]
+        ];
+        var polyline = L.polyline(latlngs, {color: 'blue'}).addTo(map);
+        // zoom the map to the polyline
+        map.fitBounds(polyline.getBounds());
+
     </script>
 
     
