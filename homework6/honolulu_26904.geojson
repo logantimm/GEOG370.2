@@ -1,0 +1,31 @@
+var cemetery = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descrip": "cemetery" }, "geometry": { "type": "Point", "coordinates": [ -157.846247, 21.312710 ] } }
+]
+}
+
+var baseball = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descrip": "baseball" }, "geometry": { "type": "Point", "coordinates": [ -157.841804, 21.310574 ] } }
+]
+}
+
+var royalvista = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descrip": "royalvista" }, "geometry": { "type": "Point", "coordinates": [ -157.84489332003463, 21.309852200195802 ] } }
+]
+}
+
+var punchbowl = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descrip": "punchbowl" }, "geometry": { "type": "Point", "coordinates": [ -157.84782776914457, 21.3108347862501 ] } }
+]
+}
