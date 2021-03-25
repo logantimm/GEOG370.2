@@ -1,0 +1,63 @@
+﻿OBJECTID,UNIT_CODE,UNIT_NAME,STATE,REGION,GNIS_ID,UNIT_TYPE,PARKNAME,,Shape__Area,Shape__Length
+41,DRTO,Dry Tortugas National Park,FL,SE,307632,National Park,Dry Tortugas,,322682120,69744.0118
+44,BRCA,Bryce Canyon National Park,UT,IM,1450197,National Park,Bryce Canyon,,232305571,127086.207
+47,YELL,Yellowstone National Park,WY,IM,1609331,National Park,Yellowstone,,17557000000,674249.707
+57,SEQU,Sequoia National Park,CA,PW,266000,National Park,Sequoia,,2553244942,320822.95
+64,MACA,Mammoth Cave National Park,KY,SE,507318,National Park,Mammoth Cave,,330311828,146274.991
+70,GRBA,Great Basin National Park,NV,PW,862430,National Park,Great Basin,,515901036,132859.999
+81,CANY,Canyonlands National Park,UT,IM,1448008,National Park,Canyonlands,,2196490657,353937.358
+100,BISC,Biscayne National Park,FL,SE,294450,National Park,Biscayne,,867063857,143915.163
+103,GUMO,Guadalupe Mountains National Park,TX,IM,1377201,National Park,Guadalupe Mountains,,491447398,134372.172
+110,JEFF,Gateway Arch National Park,MO,MW,765817,National Park,Gateway Arch,,1290994.13,9270.23052
+129,KICA,Kings Canyon National Park,CA,PW,255948,National Park,Kings Canyon,,2909305718,393124.544
+152,CARE,Capitol Reef National Park,UT,IM,1434866,National Park,Capitol Reef,,1605718361,405763.198
+167,PINN,Pinnacles National Park,CA,PW,247533,National Park,Pinnacles,,167545647,95099.5602
+193,LAVO,Lassen Volcanic National Park,CA,PW,262325,National Park,Lassen Volcanic,,753097654,149637.528
+205,MORA,Mount Rainier National Park,WA,PW,1528416,National Park,Mount Rainier,,2045641242,217660.013
+214,YOSE,Yosemite National Park,CA,PW,255923,National Park,Yosemite,,4849245259,379891.898
+222,WICA,Wind Cave National Park,SD,MW,1263056,National Park,Wind Cave,,261727427,90671.8054
+231,NOCA,North Cascades National Park,WA,PW,1528421,National Park,North Cascades,,4656124607,535900.277
+233,NPSA,National Park of American Samoa,AS,PW,1966567,National Park,National Park of American Samoa,,48283336.7,73521.0963
+234,VOYA,Voyageurs National Park,MN,MW,660491,National Park,Voyageurs,,1884045708,383313.928
+236,CONG,Congaree National Park,SC,SE,2035095,National Park,Congaree,,155132048,114498.44
+240,HALE,Haleakala National Park,HI,PW,358382,National Park,Haleakala,,156331032,101519.593
+246,CAVE,Carlsbad Caverns National Park,NM,IM,904780,National Park,Carlsbad Caverns,,264914338,116427.047
+248,ZION,Zion National Park,UT,IM,1455157,National Park,Zion,,952718698,206587.714
+256,THRO,Theodore Roosevelt National Park,ND,MW,1033824,National Park,Theodore Roosevelt,,616847538,187232.144
+258,CRLA,Crater Lake National Park,OR,PW,1163670,National Park,Crater Lake,,1379224002,177640.646
+260,GLAC,Glacier National Park,MT,IM,1803454,National Park,Glacier,,9351571347,506613.471
+261,SAGU,Saguaro National Park,AZ,IM,10683,National Park,Saguaro,,524285418,190627.99
+272,GRTE,Grand Teton National Park,WY,IM,1597571,National Park,Grand Teton,,2410496679,351764.858
+276,GRSA,Great Sand Dunes National Park,CO,IM,2733443,National Park,Great Sand Dunes,,698046850,125685.108
+282,BLCA,Black Canyon of the Gunnison National Park,CO,IM,203271,National Park,Black Canyon of the Gunnison,,207094308,113089.804
+289,BIBE,Big Bend National Park,TX,IM,1377082,National Park,Big Bend,,4329893757,462145.817
+300,ARCH,Arches National Park,UT,IM,1455716,National Park,Arches,,509081047,167803.694
+307,GRCA,Grand Canyon National Park,AZ,IM,23866,National Park,Grand Canyon,,7486947650,2129022.12
+309,MEVE,Mesa Verde National Park,CO,IM,179042,National Park,Mesa Verde,,343422764,102110.745
+317,HAVO,Hawai'i Volcanoes National Park,HI,PW,365210,National Park,Hawaii Volcanoes,,1642952586,360599.685
+324,CUVA,Cuyahoga Valley National Park,OH,MW,1066328,National Park,Cuyahoga Valley,,234527745,295869.549
+326,WRST,Wrangell-St. Elias National Park,AK,AK,1416055,National Park,Wrangell - St Elias,,1.4349E+11,4604526.11
+328,GLBA,Glacier Bay National Park,AK,AK,1416041,National Park,Glacier Bay,,48489000000,1398465.59
+330,KATM,Katmai National Park,AK,AK,1416045,National Park,Katmai,,54701000000,2137438.57
+331,KEFJ,Kenai Fjords National Park,AK,AK,1419645,National Park,Kenai Fjords,,10645000000,2248617.97
+339,GAAR,Gates of the Arctic National Park,AK,AK,1416040,National Park,Gates of the Arctic,,2.1232E+11,3462283.51
+342,KOVA,Kobuk Valley National Park,AK,AK,1416046,National Park,Kobuk Valley,,47596000000,1349409.63
+346,LACL,Lake Clark National Park,AK,AK,1416049,National Park,Lake Clark,,43869000000,1777173.55
+348,ROMO,Rocky Mountain National Park,CO,IM,204948,National Park,Rocky Mountain,,1862889420,297463.311
+353,JOTR,Joshua Tree National Park,CA,PW,277261,National Park,Joshua Tree,,4698082883,540677.207
+358,EVER,Everglades National Park,FL,SE,293666,National Park,Everglades,,7625863021,558822.072
+363,BADL,Badlands National Park,SD,MW,1265096,National Park,Badlands,,1879080612,549503.378
+369,PEFO,Petrified Forest National Park,AZ,IM,23864,National Park,Petrified Forest,,1347313174,271239.264
+384,VIIS,Virgin Islands National Park,VI,SE,1614406,National Park,Virgin Islands,,67815446.7,71984.6261
+390,OLYM,Olympic National Park,WA,PW,1530459,National Park,Olympic,,8203590772,1158605.38
+395,REDW,Redwood National Park,CA,PW,277109,National Park,Redwood,,1011699123,395507.718
+396,SHEN,Shenandoah National Park,VA,NE,1488805,National Park,Shenandoah,,1309300933,785323.329
+397,ACAD,Acadia National Park,ME,NE,578853,National Park,Acadia,,274779310,541137.315
+412,GRSM,Great Smoky Mountains National Park,NC,SE,1018241,National Park,Great Smoky Mountains,,3178103337,808754.047
+418,ISRO,Isle Royale National Park,MI,MW,1616980,National Park,Isle Royale,,4985802199,346137.748
+423,WHSA,White Sands National Park,NM,IM,914261,National Park,White Sands,,850977998,141193.602
+427,DEVA,Death Valley National Park,CA,PW,857501,National Park,Death Valley,,21544000000,907235.067
+432,INDU,Indiana Dunes National Park,IN,MW,446903,National Park,Indiana Dunes,,115487726,262805.639
+443,HOSP,Hot Springs National Park,AR,MW,56796,National Park,Hot Springs,,32612774.3,60153.8234
+489,CHIS,Channel Islands National Park,CA,PW,1662323,National Park,Channel Islands,,1449812256,340840.437
+492,DENA,Denali National Park,AK,AK,2760439,National Park,Denali,,93901000000,1815301.29
