@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 9</title>
+    <title>Homework 10</title>
 </head>
 <body>
 <h1>Geoprocessing Analysis</h1>
 <h3>Logan Timm</h3>
-<h2>Question: How much of Florida's natural area is salt marsh?</h2>
+<h2>Question: How much of Florida's salt marshes are conserved?</h2>
 <h3>I used a file of just Florida as my basemap with layers of natural area and salt marsh area on top.</h3></br>
 <h3>This is what the raw data looks like before any geoprocessing, for reference</h3></br>
 <a href="./maps/homework10_1.png">
     <img src="./maps/homework10_1.png" alt="your map" width='500px'>
 </a></br>
-<h3>I dissolved the many polygons that were present in the Florida natural area layer so the map would look cleaner.</h3></br>
-<h3>I then took the intersection of the two layers.</h3>
+<h3>I dissolved the many polygons that were present in the Florida conserved land layer so the map would look cleaner.</h3></br>
 <a href="./maps/hw10_2.png">
     <img src="./maps/hw10_2.png" alt="your map" width='500px'>
     </a></br>
+<h3>I then did an intersection of the two layers.</h3></br>
+<h3>I had some issues with QGIS and when I finally got the software to work without crashing, it took almost a full 24 hours to run the intersection!</h3></br>
+<a href="./maps/hw10.3-best.png">
+    <img src="./maps/hw10.3-best.png" alt="your map" width='500px'>
+<h2>Conclusion: a vast majority of salt marshes in Florida are in conserved land, but not all.</h2></br>
+
 <!-- Link to your shapefile in Github and you CSV -->
 <h2>Data used for this project</h2>
     <a href="./data/FL_4326.geojson"> Link to Florida geoJSON </a>
@@ -27,9 +32,9 @@
     <p></p>
     <a href="./data/flma_202101.shp"> Link to Florida natural area shapefile </a>
     <p></p>
-    <a href="https://geodata.myfwc.com/datasets/20ab7447d9424929bf0e7a2a633d6407_3/data?geometry=-83.552%2C27.376%2C-81.575%2C27.802">Link to salt marshes in Florida website/a></br>
+    <a href="https://geodata.myfwc.com/datasets/20ab7447d9424929bf0e7a2a633d6407_3/data?geometry=-83.552%2C27.376%2C-81.575%2C27.802">Link to salt marshes in Florida website</br>
     <p></p>
-    <a href="https://www.fnai.org/gisdata.cfm">Link to Florida Natural Area Inventory website/a></br>
+    <a href="https://www.fnai.org/gisdata.cfm">Link to Florida Natural Area Inventory website</br>
 
 </body>
 </html>
